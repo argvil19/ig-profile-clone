@@ -1,0 +1,88 @@
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-height: 32px;
+
+  .logo-container {
+    width: 19%;
+  }
+
+  .icon-container {
+    position: relative;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: inline-block;
+        margin-left: 40px;
+        font-size: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .input-header {
+    width: 215px;
+
+    span {
+      position: absolute;
+    }
+
+    input {
+      background-color: #FAFAFA;
+      font-family: FontAwesome, Roboto, sans-serif;
+      font-weight: 200;
+      font-size: 13px;
+      border: 1px solid #EAEAEA;
+      text-align: center;
+      border-radius: 2px;
+      width: 100%;
+      height: 28px;
+    }
+
+    input:focus {
+      background-color: #FFFFFF;
+      color: #000;
+      text-align: left;
+      padding-left: 25px;
+      outline: none;
+    }
+
+    input + span::before {
+      position: absolute;
+      font-family: FontAwesome;
+      content: '\f002';
+      font-size: 10px;
+      color: #A5A7AA;
+      right: 135px;
+      top: 6px;
+    }
+
+    input:focus + span::before {
+      position: absolute;
+      font-family: FontAwesome;
+      content: '\f002';
+      font-size: 10px;
+      color: #A5A7AA;
+      right: 195px;
+      top: 6px;
+    }
+
+    input::-webkit-input-placeholder {
+      color: #A5A7AA;
+    }
+
+    input::-moz-placeholder {
+      color: #A5A7AA;
+    }
+
+    input:-moz-placeholder {
+      color: #A5A7AA;
+    }
+    input:-ms-input-placeholder {
+      color: #A5A7AA;
+    }
+  }
+}
