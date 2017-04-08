@@ -8,6 +8,13 @@
     width: 19%;
   }
 
+  .logo-collapse {
+    display: none;
+    font-size: 3em;
+    color: #000000;
+    text-decoration: none;
+  }
+
   .icon-container {
     position: relative;
 
@@ -84,5 +91,24 @@
     input:-ms-input-placeholder {
       color: #A5A7AA;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .icon-container {
+    display: none;
+  }
+
+  .flex-header {
+    padding-right: 25px;
+    padding-left: 25px;
+
+    .logo-collapse {
+      display: block; 
+    }
+  }
+
+  .logo {
+    display: none;
   }
 }

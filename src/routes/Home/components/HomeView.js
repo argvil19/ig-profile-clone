@@ -4,7 +4,6 @@ import './HomeView.scss'
 
 export const HomeView = () => (
   <div>
-    <h4 className='text-center'>Home text!</h4>
   </div>
 )
 

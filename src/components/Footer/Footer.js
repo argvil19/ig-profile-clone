@@ -17,7 +17,7 @@ const Links = [
 export const Footer = () => (
   <div className='flex-footer'>
     <ul>
-      {Links.map(link => <li><a>{link.toUpperCase()}</a></li>)}
+      {Links.map((link, key) => <li key={key}><a>{link.toUpperCase()}</a></li>)}
     </ul>
     <div>
       <span className='copyright'>© 2017 INSTAGRAM</span>

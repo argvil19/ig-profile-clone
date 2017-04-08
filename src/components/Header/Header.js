@@ -1,6 +1,7 @@
 import React from 'react'
 import { IndexLink, Link } from 'react-router'
 import './Header.scss'
+import SearchContainer from '../../containers/SearchContainer'
 
 const logo = require('./assets/logo.png');
 
@@ -13,15 +14,15 @@ const Icons = [
 export const Header = () => (
   <div className='flex-header'>
     <div className='logo-container'>
-      <img 
-        src={logo}
-        className='img-responsive logo'
-      />
+      <Link to='/'>
+        <img 
+          src={logo}
+          className='img-responsive logo'
+        />
+        <i className='fa fa-instagram logo-collapse'></i>
+      </Link>
     </div>
-    <div className='input-header'>
-      <input placeholder='Buscar' />
-      <span></span>
-    </div>
+    <SearchContainer />
     <div className='icon-container'>
       <ul>
         {Icons.map((icon, key) => <li key={key}><i className={'fa ' + icon}></i></li>)}
