@@ -4,7 +4,7 @@ const endpoints = {
   getProfile: rootURL + 'users/',
   getRecentMedia: (id) => (rootURL + 'users/' + id + '/media/recent/')
 }
-const accessToken = '4122045686.d360e6c.4af93ba14e614e1187cfd0e677fc98cf'
+const accessToken = '4122045686.cb3328b.ce630b2fea6240e1920cfc956a1582d3'
 
 const methods = {
   searchUsers: (query, cb) => {

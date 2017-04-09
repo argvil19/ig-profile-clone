@@ -15,8 +15,11 @@ class ProfileContainer extends React.Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    this.props.dispatch(userProfile(this.props.params.id))
-    this.props.dispatch(userPosts(this.props.params.id))
+    if (prevProps.params.id !== this.props.params.id) {
+      this.props.dispatch(userProfile(this.props.params.id))
+      this.props.dispatch(userPosts(this.props.params.id))
+    }
+    
   }
 
   render() {

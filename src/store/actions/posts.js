@@ -29,7 +29,7 @@ export const userPosts = id => {
     dispatch(userPostsStart())
     methods.getRecentMedia(id, (err, profile) => {
       if (err) {
-        return dispatch(userPostsError(profile.meta))
+        return dispatch(userPostsError(profile))
       }
       return dispatch(userPostsDone(profile.data))
     })

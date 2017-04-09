@@ -29,7 +29,7 @@ export const userProfile = id => {
     dispatch(userProfileStart())
     methods.getProfile(id, (err, profile) => {
       if (err) {
-        return dispatch(userProfileError(profile.meta))
+        return dispatch(userProfileError(profile))
       }
       return dispatch(userProfileDone(profile.data))
     })

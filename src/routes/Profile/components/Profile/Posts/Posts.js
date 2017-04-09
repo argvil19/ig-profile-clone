@@ -7,7 +7,8 @@ export const Posts = (props) => {
   const images = posts.map(item => ({
     url: item.images.standard_resolution.url,
     likes: item.likes.count,
-    comments: item.comments.count
+    comments: item.comments.count,
+    type: item.type
   }))
 
   return (
